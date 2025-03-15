@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--
+	Please see the LICENSE.txt file included with this distribution for
+	attribution and copyright information.
+-->
+<root release="4.0" version="3.0">
+	<announcement font="emotefont" icon="OR_icon" text="Optical Referendum ~dev version~"/>
+	<properties>
+		<name>Feature: Optical Referendum</name>
+		<version>~dev version~</version>
+		<author>anathemort</author>
+		<description>An interface for client votes</description>
+	</properties>
+	<base>
+		<includefile source="xml/scripts.xml"/>
+		<icon name="OR_icon" file="graphics/icons/OR_icon.webp"/>
+		<script name="PowerUpOR">
+			function onInit()
+				if PowerUp then
+					PowerUp.registerExtension("Optical Referendum", "~dev_version~", {
+						['message'] = "~dev_version~\~update_notes~"
+					});
+				end
+			end
+		</script>
+	</base>
+</root>

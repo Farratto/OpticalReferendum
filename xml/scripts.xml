@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--
+	Please see the LICENSE.txt file included with this distribution for
+	attribution and copyright information.
+-->
+<root>
+	<includefile source="xml/strings.xml"/>
+
+	<script name="OpticalReferendum" file="scripts/manager_optical_referendum.lua" />
+
+	<includefile source="xml/templates.xml"/>
+	<includefile source="xml/optical_referendum.xml"/>
+</root>

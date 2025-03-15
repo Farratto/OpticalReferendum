@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Please see the LICENSE.txt file included with this distribution for
+	attribution and copyright information.
+-->
+<root>
+	<windowclass name="optical_referendum">
+		<frame>partysheet</frame>
+		<noclose/>
+		<placement>
+			<size height="300" width="500"/>
+		</placement>
+		<sizelimits>
+			<dynamic/>
+			<minimum height="300" width="500"/>
+		</sizelimits>
+
+		<helplinkres>or_window_help</helplinkres>
+
+		<script file="xml/scripts/opticalreferendum_window.lua"/>
+
+		<sheetdata>
+			<resize_partysheet/>
+			<windowtitlebar name="title">
+				<field>query</field>
+			</windowtitlebar>
+			<windowmenubar_partysheet name="menubar" />
+
+<!--			<anchor_content_partysheet_top /> -->
+			<anchor_content_top />
+
+			<subwindow name="entrylist">
+				<activate/>
+				<anchored height="100" to="contentanchor">
+					<top anchor="bottom" relation="relative" offset="10"/>
+					<left anchor="center" offset="0"/>
+				</anchored>
+				<class>opticalreferendum_entrylist</class>
+				<fastinit/>
+			</subwindow>
+
+			<button_dialog_ok name="button_ok">
+				<anchored to="contentanchor">
+					<top anchor="bottom" relation="relative" offset="25"/>
+					<left anchor="center" offset="-20"/>
+				</anchored>
+			</button_dialog_ok>
+			<button_dialog_cancel name="button_cancel">
+				<anchored to="button_ok">
+					<top anchor="top" relation="current" offset="0"/>
+					<left anchor="center" offset="20"/>
+				</anchored>
+			</button_dialog_cancel>
+		</sheetdata>
+	</windowclass>
+
+	<windowclass name="opticalreferendum_entrylist">
+		<script file="xml/scripts/opticalreferendum_entrylist.lua"/>
+	</windowclass>
+</root>

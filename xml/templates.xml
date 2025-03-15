@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Please see the LICENSE.txt file included with this distribution for
+	attribution and copyright information.
+-->
+<root>
+	<template name="opticalreferendum_entrylist_item">
+		<genericcontrol>
+			<anchored>
+				<top/>
+				<left/>
+			</anchored>
+			<script file="xml/scripts/opticalreferendum_entrylist_item.lua"/>
+		</genericcontrol>
+	</template>
+</root>
