@@ -42,7 +42,8 @@
 			<button_dialog_ok name="button_ok">
 				<anchored to="contentanchor">
 					<top anchor="bottom" relation="relative" offset="25"/>
-					<left anchor="center" offset="-20"/>
+<!--					<left anchor="center" offset="-20"/> -->
+					<left anchor="center" offset="-37.5"/>
 				</anchored>
 			</button_dialog_ok>
 			<button_dialog_cancel name="button_cancel">
