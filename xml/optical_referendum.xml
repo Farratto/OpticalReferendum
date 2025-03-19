@@ -26,8 +26,8 @@
 			</windowtitlebar>
 			<windowmenubar_partysheet name="menubar" />
 
-<!--			<anchor_content_partysheet_top /> -->
-			<anchor_content_top />
+			<anchor_content_partysheet_top />
+<!--			<anchor_content_top /> -->
 
 			<subwindow name="entrylist">
 				<activate/>
