@@ -19,6 +19,7 @@ SmiteWorks owns rights to code sections copied from their rulesets by permission
 
 ### Change Log
 
+* v1.1.6: aesthetic improvement
 * v1.1.5: slight aesthetic improvement
 * v1.1.4: FIXED: misaligned pictures
 * v1.1.3: Farratto takes over as maintainer. FIXED: Deprecation messages.

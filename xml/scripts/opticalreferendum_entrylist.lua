@@ -7,7 +7,8 @@ local MARGINS = 16;
 local widgets = {};
 
 function resize(nUsers)
-	local nWidth = (MARGINS * 2) + (nUsers * 75);
+	--local nWidth = (MARGINS * 2) + (nUsers * 75);
+	local nWidth = (MARGINS * 2) + (nUsers * 79);
 
 	parentcontrol.setAnchor("left", "", "center", "absolute", -(nWidth / 2));
 	parentcontrol.setAnchoredWidth(nWidth);
@@ -34,7 +35,8 @@ function update()
 		local control = createControl("opticalreferendum_entrylist_item");
 		control.createControls(User.getCurrentIdentity(aUsersWithIdentities[i]), DB.getValue(getDatabaseNode(), aUsersWithIdentities[i], 1));
 		control.setAnchor("top", "", "top", "absolute", MARGINS / 2);
-		control.setAnchor("left", "", "left", "absolute", (MARGINS / 2) + ((i - 1) * 75));
+		--control.setAnchor("left", "", "left", "absolute", (MARGINS / 2) + ((i - 1) * 75));
+		control.setAnchor("left", "", "left", "absolute", (MARGINS / 2) + ((i - 1) * 79));
 		control.setAnchoredHeight(CharacterListManager.PORTRAIT_SIZE);
 		control.setAnchoredWidth(CharacterListManager.PORTRAIT_SIZE);
 
